@@ -3,4 +3,4 @@ import ReactDOM from 'react-dom';
 
 import MyCV from './components/cv'
 
-ReactDOM.render(<MyCV />, document.getElementById(app))
+ReactDOM.render(<MyCV />, document.getElementById('app'))
