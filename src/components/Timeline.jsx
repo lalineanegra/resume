@@ -7,12 +7,10 @@ import TimelineConnector from '@material-ui/lab/TimelineConnector';
 import TimelineContent from '@material-ui/lab/TimelineContent';
 import TimelineOppositeContent from '@material-ui/lab/TimelineOppositeContent';
 import TimelineDot from '@material-ui/lab/TimelineDot';
-import FastfoodIcon from '@material-ui/icons/Fastfood';
 import LaptopMacIcon from '@material-ui/icons/LaptopMac';
-import HotelIcon from '@material-ui/icons/Hotel';
-import RepeatIcon from '@material-ui/icons/Repeat';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
+import { red, amber } from '@material-ui/core/colors';
 
 import { CONTENT } from '../data/content';
 
@@ -26,6 +24,10 @@ const useStyles = makeStyles((theme) => ({
   descriptionParagraph: {
     color: 'grey',
     fontSize: '1em'
+  },
+  root: {
+    color: 'white',
+    background: 'red'
   }
 }));
 
@@ -43,7 +45,7 @@ export default function JobsTimeline() {
                     </Typography>
                     </TimelineOppositeContent>
                     <TimelineSeparator>
-                    <TimelineDot color={exp.id===0?'primary':'grey'} >
+                    <TimelineDot  className={exp.id===0?classes.root: ''}>
                         <LaptopMacIcon />
                     </TimelineDot>
                     <TimelineConnector />

@@ -24,37 +24,31 @@ const useStyles = makeStyles((theme) => ({
     backgroundPosition: 'center',
   },
   overlay: {
-    position: 'absolute',
+    position: 'relative',
     top: 0,
     bottom: 0,
     right: 0,
     left: 0,
-    backgroundColor: 'rgba(0,0,0,.3)',
+    backgroundColor: 'rgba(89, 153, 255 .3)',
   },
   headerStyleContent: {
     position: 'relative',
-    padding: theme.spacing(4),
+    padding: theme.spacing(3),
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(6),
+      padding: theme.spacing(8),
       paddingRight: 0,
     },
   },
   headerStylePhoto: {
-    position: 'relative',
-    padding: theme.spacing(4),
-    [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(1),
-      paddingRight: 0,
-    },
-  },
-  profile: {
-    width: 300,
-    margin: 'auto',
+    position: 'absolute',
+    zIndex: 2,
+    paddingTop: '6%',
+    paddingLeft: '14%'
   },
   media: {
-    height: 300,
+    height: 200,
+    width: 200,
     border: '8px solid white',
-    marginRight: '0px'
   },
 }));
 
@@ -73,23 +67,20 @@ export default function Header(props) {
             <Typography component="h1" variant="h3" color="inherit" >
               {post.title}
             </Typography>
-            <Typography variant="h5" color="secondary" paragraph>
+            <Typography variant="h5" color="secondary">
               {post.description}
-            </Typography>
-            <Typography variant="h6">
-              {post.linkText}
             </Typography>
           </div>
         </Grid>
 
         <Grid item md={6} >
         <div className={classes.headerStylePhoto}>
-           <Card className={classes.profile}>
+           <Card>
             <CardActionArea>
             <CardMedia
               className={classes.media}
               image={Me}
-              title="Contemplative Reptile"
+              title="Rodrigo Alonso"
             />
             </CardActionArea>
           </Card>

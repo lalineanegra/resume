@@ -9,7 +9,7 @@ import Link from '@material-ui/core/Link';
 const useStyles = makeStyles((theme) => ({
   sidebarAboutBox: {
     padding: theme.spacing(1),
-    backgroundColor: '#DDD3CF',
+    backgroundColor: '#c9c9c1',
   },
   sidebarSection: {
     marginTop: theme.spacing(3),
@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Sidebar(props) {
   const classes = useStyles();
-  const { archives, description, social, title } = props;
+  const { about, social, title } = props;
 
   return (
     <Grid item xs={12} md={4}>
@@ -30,11 +30,15 @@ export default function Sidebar(props) {
         <Typography variant="h6" gutterBottom>
           About
         </Typography>
-        <Typography component={"p"} className={classes.aboutParagraph}>
-          {description}
+        {about.map(ab => (
+        <Typography component={"p"} className={classes.aboutParagraph} paragraph key={ab.id}>
+          {ab.paragraph}
         </Typography>
+        ))}
       </Paper>
-
+      <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
+        Social
+      </Typography>
       {social.map((network) => (
         <Link display="block" variant="body1" href="#" key={network}>
           <Grid container direction="row" spacing={1} alignItems="center">

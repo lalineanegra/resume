@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { createTheme, MuiThemeProvider } from '@material-ui/core/styles';
-import { red, amber } from '@material-ui/core/colors'
+import { red, amber } from '@material-ui/core/colors';
 
 import CV from './components/CV'
 

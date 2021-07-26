@@ -20,12 +20,10 @@ export default function Main(props) {
   return (
     <Grid item xs={12} md={8}>
       <Typography variant="h6" className={classes.title} gutterBottom>
-        Timeline
+        Work Experience
       </Typography>
       <Divider />
-     
       <JobsTimeline />
-   
     </Grid>
   );
 }
