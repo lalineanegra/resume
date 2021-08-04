@@ -10,8 +10,8 @@ import PersonalDetails from './PersonalDetails';
 import Main from './Main';
 import Sidebar from './Sidebar';
 import Skills from './Skills';
+import Education from './Education';
 import { CONTENT } from '../data/content'
-
 
 const useStyles = makeStyles((theme) => ({
   mainGrid: {
@@ -19,15 +19,12 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 const mainFeaturedPost = {
-  title: CONTENT.name,
+  title: CONTENT.firstName + ' ' + CONTENT.lastName,
   description: CONTENT.title,
   about: CONTENT.title,
   imgText: 'main image description',
 };
-
-
 
 const sidebar = {
   title: 'About',
@@ -55,7 +52,6 @@ export default function Blog() {
           </Grid>
           <Grid container spacing={5} className={classes.mainGrid}>
             <Main title="Timeline"  />
-           
             <Sidebar
               title={sidebar.title}
               about={sidebar.description}
@@ -64,7 +60,12 @@ export default function Blog() {
           </Grid>
         </main>
       </Container>
-
+      <Container maxWidth="lg">
+        <Skills skills={CONTENT.skills}/>
+      </Container>
+      <Container maxWidth="lg">
+        <Education />
+      </Container>
     </React.Fragment>
   );
 }

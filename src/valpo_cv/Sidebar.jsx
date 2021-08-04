@@ -15,8 +15,9 @@ const useStyles = makeStyles((theme) => ({
     marginTop: theme.spacing(3),
   },
   aboutParagraph: {
-    fontSize: '1em',
-    color: '#363431'
+    fontSize: 14,
+    color: '#4a4746',
+    align: 'justify'
   }
 }));
 
@@ -27,16 +28,16 @@ export default function Sidebar(props) {
   return (
     <Grid item xs={12} md={4}>
       <Paper elevation={0} className={classes.sidebarAboutBox}>
-        <Typography variant="h6" gutterBottom>
+        <Typography variant="h6" gutterBottom align="center">
           About
         </Typography>
         {about.map(ab => (
-        <Typography component={"p"} className={classes.aboutParagraph} paragraph key={ab.id}>
+        <Typography  className={classes.aboutParagraph} paragraph key={ab.id}>
           {ab.paragraph}
         </Typography>
         ))}
       </Paper>
-      <Typography variant="h6" gutterBottom className={classes.sidebarSection}>
+      <Typography variant="h6" gutterBottom className={classes.sidebarSection} align='center'>
         Social
       </Typography>
       {social.map((network) => (

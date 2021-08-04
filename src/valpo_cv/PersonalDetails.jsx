@@ -21,7 +21,7 @@ const useStyles = makeStyles({
     dense: true
   },
   data: {
-    textAlign: 'left'
+    textAlign: 'left',
   },
   table: {
     minWidth: 300,
@@ -48,7 +48,7 @@ export default function PersonalDetails(props) {
             <CardContent>
               <Grid container spacing={1}>
                 <Grid item xs={12} >
-                  <Typography component="h2" variant="h6">
+                  <Typography variant="h6" align="center">
                     Personal
                   </Typography>
                   <Divider variant="fullWidth" />
@@ -59,7 +59,7 @@ export default function PersonalDetails(props) {
                       <TableBody>
                         {mainDetails.map((row) => (
                           <TableRow key={row.name}>
-                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0}}>
+                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0, color: "#4a4746", fontWeight: "bold"}}>
                               {row.name}
                             </TableCell>
                             <TableCell align="right" style={{borderBottom:"none", padding: 0}}>
@@ -77,7 +77,7 @@ export default function PersonalDetails(props) {
                       <TableBody>
                         {secondDetails.map((row) => (
                           <TableRow key={row.name}>
-                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0}}>
+                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0, color: "#4a4746", fontWeight: "bold"}}>
                               {row.name}
                             </TableCell>
                             <TableCell align="right" style={{borderBottom:"none", padding: 0}}>
@@ -95,7 +95,7 @@ export default function PersonalDetails(props) {
                       <TableBody>
                         {thirdDetails.map((row) => (
                           <TableRow key={row.name}>
-                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0}} >
+                            <TableCell component="th" scope="row" style={{borderBottom:"none", padding: 0, color: "#4a4746", fontWeight: "bold"}} >
                               {row.name}
                             </TableCell>
                             <TableCell align="right" style={{borderBottom:"none", padding: 0}}>

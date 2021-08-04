@@ -7,19 +7,13 @@ import Divider from '@material-ui/core/Divider';
 
 import JobsTimeline from './Timeline';
 
-const useStyles = makeStyles(() => ({
-  title: {
-    marginRight: '3em'
-  },
-}));
 
 export default function Main(props) {
-  const classes = useStyles();
   const { posts, title } = props;
 
   return (
     <Grid item xs={12} md={8}>
-      <Typography variant="h6" className={classes.title} gutterBottom>
+      <Typography variant="h6"  gutterBottom align="center">
         Work Experience
       </Typography>
       <Divider />

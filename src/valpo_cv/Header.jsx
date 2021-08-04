@@ -9,7 +9,7 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
 
-import Me from './me.jpg'
+import Me from '../common/me.jpg'
 import myImage from './valpo.jpg';
 
 const useStyles = makeStyles((theme) => ({

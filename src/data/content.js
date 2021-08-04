@@ -1,5 +1,6 @@
 export const CONTENT = {
-    name: 'Rodrigo Alonso',
+    firstName: 'Rodrigo',
+    lastName: 'Alonso',
     title: 'Cloud Software Developer',
     email: 'rodrigo.gtr@gmail.com',
     about: [
@@ -47,7 +48,7 @@ export const CONTENT = {
         {
             id: 5,
             paragraph: `
-                Further details about specializations and skills are in my LinkedIn account.
+                
             `
         }
     ],
@@ -55,18 +56,22 @@ export const CONTENT = {
         {name: 'FullName', value: 'Rodrigo Alonso Alarcón R.'},
         {name: 'Country', value: 'Chile'},
         {name: 'City', value: 'Valparaíso'},
-        {name: 'Email', value: 'rodrigo.gtr@gmail.com'},
     ],
     secondDetails: [
+        {name: 'Email', value: 'rodrigo.gtr@gmail.com'},
         {name: 'Phone', value: '+56 9 66095 824'},
-        {name: 'Born', value: '01.07.1980'},
-        {name: 'University', value: 'Pontifical Catholic University of Valparaíso'},
-        {name: 'Title', value: 'Construction Engineer'},
     ],
     thirdDetails: [
         {name: 'Citizenship', value: 'Chilean'},
         {name: 'Languages', value: 'Spanish, English'},
     ],
+    detailsSummary: {
+        country: 'Chile',
+        city: 'Valparaíso',
+        email: 'rodrigo.gtr@gmail.com',
+        phone: '+56 9 66095 824',
+        web: ''
+    },
     experience: [
         {
             id: 0,
@@ -75,7 +80,7 @@ export const CONTENT = {
             dates: 'Sept 2020 - Now',
             city: 'Valparaíso, Chile',
             accomplishments: `
-                For Falabella client, I joined the deployment stage of different components
+                Working with Falabella client, I joined the deployment stage of different components
                 associated with logistic and sales, working with microservices in AdonisJS, Python-Flask and Postgres,
                 building the UI to expose information to inner clients, and the services to load the data.
                 Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU
@@ -139,6 +144,75 @@ export const CONTENT = {
             Production manager of steel infrastructure of diverse industrial assembly projects, like submarine emissary in Los Vilos,
             Valparaiso region, and submarine emissary in Punta del Este, Uruguay
             `
+        }
+    ],
+    skills : {
+        skills_1: [
+            {
+                id: 0,
+                name: 'NodeJS',
+                value: 90,
+            },
+            {
+                id: 1,
+                name: 'React',
+                value: 90,
+            },
+            {
+                id: 2,
+                name: 'Apollo-GraphQL',
+                value: 80,
+            }
+        ],
+        skills_2: [
+            {
+                id: 0,
+                name: 'Python',
+                value: 80,
+            },
+            {
+                id: 1,
+                name: 'Pandas',
+                value: 75,
+            },
+            {
+                id: 2,
+                name: 'Django',
+                value: 70,
+            }
+        ],
+        skills_3: [
+            {
+                id: 0,
+                name: 'Docker',
+                value: 90,
+            },
+            {
+                id: 1,
+                name: 'PostgreSQL',
+                value: 80,
+            },
+            {
+                id: 2,
+                name: 'MongoDB',
+                value: 70,
+            }
+        ],
+    },
+    education: [
+        {
+            id: 0,
+            year: '2002-2008',
+            description: `
+                blah blah blah
+            `
+        },
+        {
+            id: 1,
+            year: 'Diploma-Courses',
+            description: `
+                2017: Managing Energy Market Diploma.
+                2015: How Google does Machine Learning            `
         }
     ]
 }
