@@ -19,8 +19,8 @@ export const BWCV = () => {
                 <main>
                     <Header />
                     <About />
+                    <Skills skills={CONTENT.skills}/>
                     <Experience experience={CONTENT.experience}/>
-                    <Skills />
                     <Education />
                 </main>
             </Container>

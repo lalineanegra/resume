@@ -12,14 +12,13 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'stretch',
     },
     sectionContent: {
-        background: '#f7f7f7',
+        background: theme.palette.action.hover,
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'right',
         paddingLeft:'20%'
     },
     content: {
-        background: theme.palette.background.default,
         paddingLeft: 0,
         marginLeft: 0,
         justifyContent: 'left',

@@ -160,7 +160,7 @@ export const CONTENT = {
             },
             {
                 id: 2,
-                name: 'Apollo-GraphQL',
+                name: 'GraphQL',
                 value: 80,
             }
         ],
@@ -177,24 +177,24 @@ export const CONTENT = {
             },
             {
                 id: 2,
-                name: 'Django',
+                name: 'PostgreSQL',
                 value: 70,
             }
         ],
         skills_3: [
             {
                 id: 0,
-                name: 'Docker',
+                name: 'MongoDB',
                 value: 90,
             },
             {
                 id: 1,
-                name: 'PostgreSQL',
+                name: 'Docker',
                 value: 80,
             },
             {
                 id: 2,
-                name: 'MongoDB',
+                name: 'Kubernetes',
                 value: 70,
             }
         ],

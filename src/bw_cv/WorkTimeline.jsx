@@ -12,9 +12,6 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 
-import { CONTENT } from '../data/content';
-import { useEffect } from "react";
-
 const useStyles = makeStyles(() => ({
   oppositeContent: {
     // TODO: adjust this value accordingly
