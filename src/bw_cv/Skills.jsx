@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
         width: '100%',
        
     },
+    title: {
+        marginRight: 50
+    }
 }));
 
 export const Skills = (props) => {
@@ -43,7 +46,7 @@ export const Skills = (props) => {
             className={classes.section}
         >
             <Grid item xs={12} md={4} className={classes.sectionContent}>
-                <Typography variant='h6' display="block">
+                <Typography variant='h6' display="block" className={classes.title}>
                     SKILLS
                 </Typography>
             </Grid>

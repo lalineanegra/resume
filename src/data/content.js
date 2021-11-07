@@ -151,7 +151,7 @@ export const CONTENT = {
             {
                 id: 0,
                 name: 'NodeJS',
-                value: 90,
+                value: 95,
             },
             {
                 id: 1,
@@ -160,6 +160,11 @@ export const CONTENT = {
             },
             {
                 id: 2,
+                name: 'AdonisJS',
+                value: 80,
+            },
+            {
+                id: 3,
                 name: 'GraphQL',
                 value: 80,
             }
@@ -167,19 +172,25 @@ export const CONTENT = {
         skills_2: [
             {
                 id: 0,
+                name: 'Typescript',
+                value: 60,
+            },
+            {
+                id: 1,
                 name: 'Python',
                 value: 80,
             },
             {
-                id: 1,
+                id: 2,
                 name: 'Pandas',
-                value: 75,
+                value: 70,
             },
             {
-                id: 2,
+                id: 3,
                 name: 'PostgreSQL',
                 value: 70,
-            }
+            },
+
         ],
         skills_3: [
             {
@@ -187,15 +198,21 @@ export const CONTENT = {
                 name: 'MongoDB',
                 value: 90,
             },
+
             {
                 id: 1,
                 name: 'Docker',
-                value: 80,
+                value: 98,
             },
             {
                 id: 2,
                 name: 'Kubernetes',
-                value: 70,
+                value: 60,
+            },
+            {
+                id: 3,
+                name: 'GoogleCloud',
+                value: 60,
             }
         ],
     },

@@ -20,6 +20,9 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         paddingLeft: 50,
+    },
+    title: {
+        marginRight: 50
     }
 }));
 
@@ -31,7 +34,7 @@ export const About = () => {
             className={classes.section}
         >
             <Grid item xs={12} md={4} className={classes.sectionContent}>
-                    <Typography variant='h6' align="right">
+                    <Typography variant='h6' align="right" className={classes.title}>
                         ABOUT
                     </Typography>
             </Grid>

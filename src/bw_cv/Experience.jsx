@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'left',
         textAlign: 'left',
     },
+    title: {
+        marginRight: 50
+    }
 }));
 
 export const Experience = (props) => {
@@ -35,7 +38,7 @@ export const Experience = (props) => {
             className={classes.section}
         >
             <Grid item xs={12} md={4} className={classes.sectionContent}>
-                <Typography variant='h6' display="block">
+                <Typography variant='h6' display="block" className={classes.title}>
                     EXPERIENCE
                 </Typography>
             </Grid>
