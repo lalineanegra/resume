@@ -99,7 +99,7 @@ export const Header = () => {
                     </Grid>
                     <Grid item xs={12} md={3} className={classes.content}>
                     <Typography variant="subtitle1">Phone</Typography>
-                        <Typography variant="subtitle1" >{CONTENT.detailsSummary.phone}</Typography>
+                        <Typography variant="subtitle1" >{ /*CONTENT.detailsSummary.phone */}</Typography>
                     </Grid>
                     <Grid item xs={12} md={3}  className={classes.content}>
                     <Typography variant="subtitle1">Web</Typography>
