@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "webpack-dev-server --open --port 3000 --compress --mode development",
     "build": "rm -rf dist && webpack --mode production --progress",
     "dev": "rm -rf dist && webpack-dev-server --mode development --progress"

@@ -89,16 +89,16 @@ export const Skills = (props) => {
                     <Grid item xs={12} md={4} >
                         <List  className={classes.root} aria-label="skills">
                         {skills.skills_3.map(skill => (
-                                <ListItem >
-                                    <Grid item xs={12} md={6} >
-                                        <ListItemText secondary={skill.name}/>
-                                    </Grid>
-                                    <Grid item xs={12} md={6} >
-                                        <div className={classes.root}>
-                                            <LinearProgress variant="determinate" value={skill.value} />
-                                        </div>
-                                    </Grid>
-                                </ListItem>
+                            <ListItem >
+                                <Grid item xs={12} md={6} >
+                                    <ListItemText secondary={skill.name}/>
+                                </Grid>
+                                <Grid item xs={12} md={6} >
+                                    <div className={classes.root}>
+                                        <LinearProgress variant="determinate" value={skill.value} />
+                                    </div>
+                                </Grid>
+                            </ListItem>
                             ))
                             }
                         </List>
