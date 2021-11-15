@@ -216,21 +216,67 @@ export const CONTENT = {
             }
         ],
     },
-    education: [
-        {
-            id: 0,
-            year: '2002-2008',
-            description: `
-                blah blah blah
-            `
-        },
-        {
-            id: 1,
-            year: 'Diploma-Courses',
-            description: `
-                2017: Managing Energy Market Diploma.
-                2015: How Google does Machine Learning            `
-        }
-    ]
+    education: {
+        university: {
+                year: '2002-2008',
+                name: 'Pontifical Catholic University of Valparaíso',
+                title: ' Construction Engineer'
+            },
+        diplomas: [
+            {
+                id: 1,
+                year: '2017',
+                university: 'Pontifical Catholic University of Chile',
+                name: 'Management of Energy Markets'
+            },      
+        ],
+        courses: [
+            {
+                id: 0,
+                year: '2021',
+                name: 'LFW211: Node.js Application Development'
+            },
+            {
+                id: 1,
+                year: '2021',
+                name: 'LFS253: Containers Fundamentals'
+            },
+            {
+                id: 2,
+                year: '2021',
+                name: 'LFS201: Essentials of Linux System Administration'
+            },
+            {
+                id: 3,
+                year: '2021',
+                name: 'Python Basics for Data Science'
+            },
+            {
+                id: 4,
+                year: '2020',
+                name: 'AWS Fundamentals: Addressing Security Risk'
+            },
+            {
+                id: 5,
+                year: '2020',
+                name: 'AWS Fundamentals: Going Cloud-Native'
+            },
+            {
+                id: 6,
+                year: '2019',
+                name: 'M220JS: MongoDB for Javascript Developers'
+            },
+            {
+                id: 7,
+                year: '2019',
+                name: 'M320: Data Modeling'
+            },
+            {
+                id: 8,
+                year: '2018',
+                name: 'Machine Learning Specialization, Google'
+            }
+        ]
+    }
 }
 

@@ -6,9 +6,9 @@ import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
 import ListItemAvatar from '@material-ui/core/ListItemAvatar';
 import Avatar from '@material-ui/core/Avatar';
-import ImageIcon from '@material-ui/icons/Image';
-import WorkIcon from '@material-ui/icons/Work';
-import BeachAccessIcon from '@material-ui/icons/BeachAccess';
+import ImportContacts from '@material-ui/icons/ImportContacts';
+import TurnedIn from '@material-ui/icons/TurnedIn';
+import LaptopMac from '@material-ui/icons/LaptopMac';
 
 const useStyles = makeStyles((theme) => ({
     section: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme) => ({
     },
     content: {
         background: theme.palette.background.default,
-        paddingLeft: 0,
+        paddingLeft: 60,
         marginLeft: 0,
         justifyContent: 'left',
         textAlign: 'left',
@@ -31,10 +31,15 @@ const useStyles = makeStyles((theme) => ({
     title: {
         marginRight: 50
     },
+    courses: {
+        marginRight: '60'
+    },
+    listCourse: {
+        color: 'grey'
+    },
     root: {
-        display: 'flex',
         width: '100%',
-        backgroundColor: theme.palette.background.paper,
+        backgroundColor: theme.palette.background.default,
     },
 }));
 
@@ -52,32 +57,65 @@ export const Education = (props) => {
                 </Typography>
             </Grid>
             <Grid item xs={12} md={8} className={classes.content}>
-                <List className={classes.root}>
-                    <ListItem>
-                        <ListItemAvatar>
-                        <Avatar>
-                            <ImageIcon />
-                        </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Photos" secondary="Jan 9, 2014" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemAvatar>
-                        <Avatar>
-                            <WorkIcon />
-                        </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Work" secondary="Jan 7, 2014" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemAvatar>
-                        <Avatar>
-                            <BeachAccessIcon />
-                        </Avatar>
-                        </ListItemAvatar>
-                        <ListItemText primary="Vacation" secondary="July 20, 2014" />
-                    </ListItem>
-                </List>
+                <Grid container>
+                    <Grid item xs={12} md={6} className={classes.courses}>
+                        <List className={classes.root}>
+                            <ListItem>
+                                <ListItemAvatar>
+                                <Avatar>
+                                    <ImportContacts />
+                                </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary="University" secondary={education.university.name} />
+                            </ListItem>
+                            <ListItem>
+                                <Typography variant="body2" display="block" className={classes.listCourse}>
+                                {education.university.title}
+                                </Typography>
+                            </ListItem>
+                        </List>
+                    </Grid>
+                    <Grid item xs={12} md={6} className={classes.courses}>
+                        <List className={classes.root}>
+                            <ListItem>
+                                <ListItemAvatar>
+                                <Avatar>
+                                    <TurnedIn />
+                                </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary="Diplomas" secondary={education.diplomas[0].university}/>
+                            </ListItem>
+                            {education.diplomas.map(diploma => (
+                            <ListItem id={diploma.id}>
+                                <Typography variant="body2" display="block" className={classes.listCourse}>
+                                    {diploma.name}
+                                </Typography>
+                            </ListItem>
+                            ))
+                            }
+                        </List>
+                    </Grid>
+                    <Grid item xs={12} md={12} className={classes.courses} >
+                        <List>
+                            <ListItem>
+                                <ListItemAvatar>
+                                <Avatar>
+                                    <LaptopMac />
+                                </Avatar>
+                                </ListItemAvatar>
+                                <ListItemText primary="Courses" />
+                            </ListItem>
+                            {education.courses.map(course => (
+                            <ListItem id={course.id}>
+                                <Typography variant="body2" display="block" className={classes.listCourse}>
+                                    {course.name}
+                                </Typography>
+                            </ListItem>
+                            ))
+                            }
+                        </List>
+                    </Grid>
+                </Grid>
             </Grid>
         </Grid>
     )

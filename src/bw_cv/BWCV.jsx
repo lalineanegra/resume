@@ -21,7 +21,7 @@ export const BWCV = () => {
                     <About />
                     <Skills skills={CONTENT.skills}/>
                     <Experience experience={CONTENT.experience}/>
-                    <Education />
+                    <Education education={CONTENT.education}/>
                 </main>
             </Container>
         </React.Fragment>
