@@ -17,7 +17,12 @@ const useStyles = makeStyles((theme) => ({
         alignItems: 'center',
         display: 'flex',
         justifyContent: 'right',
-        paddingLeft:'20%'
+        paddingLeft:'20%',
+        [theme.breakpoints.down('sm')]: {
+            justifyContent: 'center',
+            paddingTop: 40,
+            paddingBottom: 40
+        }
     },
     content: {
         background: theme.palette.background.default,
