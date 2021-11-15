@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
     header: {
         minHeight: 600,
         alignItems: 'stretch',
+
     },
     photoCard: {
         paddingTop: 300,
@@ -22,15 +23,21 @@ const useStyles = makeStyles((theme) => ({
         border: 'none',
         boxShadow: 'none',
         background: '#f7f7f7',
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: 80
+        }
     },
     photo: {
         webkitFilter: "grayscale(100%)",
         filter: "grayscale(100%)",
         borderRadius: '50%',
-        padding: '20%'
+        padding: '20%',
     },
     titles: {
         paddingTop: 300,
+        [theme.breakpoints.down('sm')]: {
+            paddingTop: 30
+        }
     },
     titleOne: {
         paddingBottom: 0,
@@ -75,16 +82,18 @@ export const Header = () => {
                     />
                 </Card>
             </Grid>
-            <Grid item xs={8}>
-                <Grid item xs={12} className={classes.titles}>
-                    <Typography variant="h2" paragraph className={classes.titleOne} color="textSecondary">
-                        {CONTENT.firstName.toLowerCase()}
-                    </Typography>
-                    <Typography variant="h2" paragraph color="primary"className={classes.titleTwo}>
-                        {CONTENT.lastName.toUpperCase()}
-                    </Typography>
-                    <Typography variant="h5" paragraph className={classes.titleThree}>{CONTENT.title}</Typography>
-                </Grid>
+            <Grid item xs={12} md={8}>
+              
+                    <Grid item xs={12} className={classes.titles}>
+                        <Typography variant="h2" paragraph className={classes.titleOne} color="textSecondary">
+                            {CONTENT.firstName.toLowerCase()}
+                        </Typography>
+                        <Typography variant="h2" paragraph color="primary"className={classes.titleTwo}>
+                            {CONTENT.lastName.toUpperCase()}
+                        </Typography>
+                        <Typography variant="h5" paragraph className={classes.titleThree}>{CONTENT.title}</Typography>
+                    </Grid>
+             
                 <Divider className={classes.dividerInset}/>
                 <Grid container>
                     <Grid item xs={12} md={3} className={classes.content}>

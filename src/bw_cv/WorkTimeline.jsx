@@ -12,11 +12,17 @@ import {
 } from '@material-ui/core';
 import { makeStyles } from "@material-ui/core/styles";
 
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   oppositeContent: {
     // TODO: adjust this value accordingly
     flex: 0.1
   },
+  titles: {
+    [theme.breakpoints.down('sm')]: {
+      marginLeft: 10,
+      paddingLeft: 10
+    }
+  }
 }));
 
 export const WorkTimeline = (props) => {
@@ -24,7 +30,7 @@ export const WorkTimeline = (props) => {
   const classes = useStyles();
 
   return (
-      <Timeline align="left">
+    <Timeline align="left">
         {experience.map(exp => (
         <TimelineItem key={exp.id}>
           <TimelineOppositeContent
@@ -41,13 +47,13 @@ export const WorkTimeline = (props) => {
           </TimelineSeparator>
           <TimelineContent>
           <Grid container>
-             <Grid item xs={4} md={4}>
-             <Typography variant="subtitle2">
+             <Grid item xs={4} md={4} className={classes.titles}>
+              <Typography variant="subtitle2">
                   {exp.dates}
-               </Typography>
-               <Typography variant="overline">
+              </Typography>
+              <Typography variant="overline">
                   {exp.company}
-               </Typography>
+              </Typography>
              </Grid>
              <Grid item xs={8} md={8}>
              <Typography variant="body2" color="textSecondary">
