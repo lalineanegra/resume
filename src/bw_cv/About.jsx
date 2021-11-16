@@ -19,15 +19,20 @@ const useStyles = makeStyles((theme) => ({
         paddingLeft:'25%',
         [theme.breakpoints.down('sm')]: {
             justifyContent: 'center',
-            paddingTop: 40,
-            paddingBottom: 40
+            paddingTop: 10,
+            paddingBottom: 10, 
         }
     },
     content: {
         paddingLeft: 50,
+        paddingTop: 10,
+        paddingBottom: 10,
+        [theme.breakpoints.down('sm')]: {
+            padding: 15
+        }
     },
     title: {
-        marginRight: 50
+        marginRight: 50,
     }
 }));
 

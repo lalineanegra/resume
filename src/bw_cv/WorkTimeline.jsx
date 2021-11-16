@@ -18,10 +18,6 @@ const useStyles = makeStyles((theme) => ({
     flex: 0.1
   },
   titles: {
-    [theme.breakpoints.down('sm')]: {
-      marginLeft: 10,
-      paddingLeft: 10
-    }
   }
 }));
 
@@ -30,42 +26,42 @@ export const WorkTimeline = (props) => {
   const classes = useStyles();
 
   return (
-    <Timeline align="left">
-        {experience.map(exp => (
-        <TimelineItem key={exp.id}>
-          <TimelineOppositeContent
-            className={classes.oppositeContent}
-            color="textSecondary"
-          >
-            <Typography variant="overline">
-              
-            </Typography>
-          </TimelineOppositeContent>
-          <TimelineSeparator>
-            <TimelineDot color="primary"/>
-            <TimelineConnector color="primary"/>
-          </TimelineSeparator>
-          <TimelineContent>
-          <Grid container>
-             <Grid item xs={4} md={4} className={classes.titles}>
-              <Typography variant="subtitle2">
-                  {exp.dates}
-              </Typography>
-              <Typography variant="overline">
-                  {exp.company}
-              </Typography>
-             </Grid>
-             <Grid item xs={8} md={8}>
-             <Typography variant="body2" color="textSecondary">
-                {exp.accomplishments}
-              </Typography>
-             </Grid>
-           </Grid>
-          </TimelineContent>
-        </TimelineItem>
-        ))}
-      </Timeline>
-  );
+		<Timeline align="left">
+			{experience.map(exp => (
+			<TimelineItem key={exp.id}>
+				<TimelineOppositeContent
+					className={classes.oppositeContent}
+					color="textSecondary"
+				>
+					<Typography variant="overline">
+					
+					</Typography>
+				</TimelineOppositeContent>
+				<TimelineSeparator>
+					<TimelineDot color="primary"/>
+					<TimelineConnector color="primary"/>
+				</TimelineSeparator>
+				<TimelineContent>
+					<Grid container>
+						<Grid item xs={12} md={4} className={classes.titles}>
+							<Typography variant="subtitle2">
+								{exp.dates}
+							</Typography>
+							<Typography variant="overline">
+								{exp.company}
+							</Typography>
+						</Grid>
+						<Grid item xs={12} md={8}>
+							<Typography variant="body2" color="textSecondary">
+								{exp.accomplishments}
+							</Typography>
+						</Grid>
+					</Grid>
+				</TimelineContent>
+			</TimelineItem>
+			))}
+		</Timeline>
+  	);
 }
 
 export default WorkTimeline;

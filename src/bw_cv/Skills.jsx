@@ -31,7 +31,10 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: 'left',
         textAlign: 'left',
         paddingTop: 50,
-        paddingBottom: 50
+        paddingBottom: 50,
+        [theme.breakpoints.down('sm')]: {
+            padding: 15
+        }
     },
     root: {
         width: '100%',
