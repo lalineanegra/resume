@@ -32,6 +32,9 @@ const useStyles = makeStyles((theme) => ({
         marginLeft: 0,
         justifyContent: 'left',
         textAlign: 'left',
+        [theme.breakpoints.down('sm')]: {
+            padding: 10
+        }
     },
     title: {
         marginRight: 50
