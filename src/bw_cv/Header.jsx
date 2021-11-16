@@ -44,23 +44,38 @@ const useStyles = makeStyles((theme) => ({
         marginBottom: 0,
         fontWeight: 100,
         color: 'grey',
-        marginLeft: 50
+        marginLeft: 50,
+        [theme.breakpoints.down('sm')]: {
+            margin: 10
+        }
     },
     titleTwo: {
         paddingTop: 0,
         marginTop: 0,
         fontWeight: 'bold',
         marginLeft: 50,
+        [theme.breakpoints.down('sm')]: {
+            margin: 10
+        }
     },
     titleThree: {
         marginLeft: 50,
+        [theme.breakpoints.down('sm')]: {
+            margin: 10
+        }
     },
     content: {
         paddingLeft: 50,
         paddingTop: 20,
+        [theme.breakpoints.down('sm')]: {
+            padding: 10
+        }
     },
     dividerInset: {
         margin: `0px 0 0 ${theme.spacing(5)}px`,
+        [theme.breakpoints.down('sm')]: {
+            margin: '0 auto'
+        }
     },
 }));
 
@@ -83,7 +98,6 @@ export const Header = () => {
                 </Card>
             </Grid>
             <Grid item xs={12} md={8}>
-              
                     <Grid item xs={12} className={classes.titles}>
                         <Typography variant="h2" paragraph className={classes.titleOne} color="textSecondary">
                             {CONTENT.firstName.toLowerCase()}
@@ -93,7 +107,6 @@ export const Header = () => {
                         </Typography>
                         <Typography variant="h5" paragraph className={classes.titleThree}>{CONTENT.title}</Typography>
                     </Grid>
-             
                 <Divider className={classes.dividerInset}/>
                 <Grid container>
                     <Grid item xs={12} md={3} className={classes.content}>
