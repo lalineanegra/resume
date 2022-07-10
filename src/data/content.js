@@ -7,8 +7,8 @@ export const CONTENT = {
         {
             id: 0,
             paragraph: `I've dedicated my professional career between the front and back-end, my 
-                favorite stack includes the use of React, ApolloGraphQL, NodeJS (AdonisJS) and PostgreSQL,
-                though I also work frequently with Python in the back-end i.e. for making ETL's. I've been 
+                favorite stack includes the use of React (SSR with NextJS), ApolloGraphQL, NodeJS (Express) and PostgreSQL,
+                though I also work frequently with Python in the back-end i.e. for making ETL's, orchestrate (Apache Airflow). I've been 
                 involved in the creation of UI's for internal and external organizations clients, dealing
                 with responsive designs and in a lesser extent, with mobile through React Native.
             `
