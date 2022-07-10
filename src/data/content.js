@@ -42,7 +42,7 @@ export const CONTENT = {
             paragraph: `
                 I enjoy the trekking in hills and the outdoors in general. I also like playing the guitar, the photography and paint.
                 Although attached to my family, I travel from time to time to visits cities and their historic centers, which I enjoy
-                to discover.
+                to explore.
             `
         },
         {
