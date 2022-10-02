@@ -180,24 +180,25 @@ export const en = {
     },
     {
       id: 2,
-      name: "AdonisJS",
+      name: "Python",
       value: 80,
     },
     {
       id: 3,
-      name: "GraphQL",
-      value: 80,
+      name: "Airflow",
+      value: 70,
     },
     {
       id: 4,
-      name: "Typescript",
-      value: 60,
+      name: "GraphQL",
+      value: 50,
     },
     {
       id: 5,
-      name: "Python",
-      value: 80,
+      name: "Typescript",
+      value: 60,
     },
+
     {
       id: 6,
       name: "Pandas",
@@ -222,7 +223,7 @@ export const en = {
     {
       id: 10,
       name: "Kubernetes",
-      value: 60,
+      value: 30,
     },
     {
       id: 11,
