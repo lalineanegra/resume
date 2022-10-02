@@ -9,7 +9,7 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { Typography, Grid } from "@mui/material";
-import { ExperienceFields, ExperienceType } from "../../../types/interfaces";
+import { ExperienceType } from "../../../types/interfaces";
 
 const titlesStyle = css({});
 
