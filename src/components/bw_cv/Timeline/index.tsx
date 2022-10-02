@@ -9,28 +9,27 @@ import TimelineContent from "@mui/lab/TimelineContent";
 import TimelineDot from "@mui/lab/TimelineDot";
 import TimelineOppositeContent from "@mui/lab/TimelineOppositeContent";
 import { Typography, Grid } from "@mui/material";
+import { ExperienceFields, ExperienceType } from "../../../types/interfaces";
 
-const titlesStyle = css({})
+const titlesStyle = css({});
 
-export const WorkTimeline = (props) => {
-  const { experience } = props;
+interface Props {
+  experience: ExperienceType[];
+}
 
-
+export const WorkTimeline = (props: Props) => {
   return (
-    <Timeline align="left" >
-      {experience.map((exp) => (
+    <Timeline sx={{ justifyContent: "left" }}>
+      {props.experience.map((exp: ExperienceType) => (
         <TimelineItem key={exp.id}>
-          <TimelineOppositeContent
-            color="textSecondary"
-            sx={{flex: 0.1}}
-          >
+          <TimelineOppositeContent color="textSecondary" sx={{ flex: 0.1 }}>
             <Typography variant="overline"></Typography>
           </TimelineOppositeContent>
           <TimelineSeparator>
             <TimelineDot color="primary" />
             <TimelineConnector color="primary" />
           </TimelineSeparator>
-          <TimelineContent >
+          <TimelineContent>
             <Grid container>
               <Grid item xs={12} md={4} css={titlesStyle}>
                 <Typography variant="subtitle2">{exp.dates}</Typography>

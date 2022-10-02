@@ -1,3 +1,9 @@
+export interface MainDetails {
+  firstName: string;
+  lastName: string;
+  title: string;
+}
+
 export interface EducationType {
   university: University;
   diplomas: Diplomas[];
@@ -33,7 +39,7 @@ export interface DetailsType {
   value: string;
 }
 
-export interface DetailsSummaryType{
+export interface DetailsSummaryType {
   country: string;
   city: string;
   email: string;
@@ -50,8 +56,42 @@ export interface ExperienceType {
   accomplishments: string;
 }
 
-export interface SkillsType {
+export interface SkillsDetails {
   id: number;
   name: string;
   value: number;
+}
+
+export interface HeaderFields {
+  locationField: string;
+  emailField: string;
+  phoneField: string;
+  webField: string;
+}
+
+export interface AboutFields {
+  aboutTitle: string;
+}
+
+export interface EducationFields {
+  educationTitle: string;
+  university: string;
+  diplomas: string;
+  courses: string;
+}
+
+export interface ExperienceFields {
+  experienceTitle: string;
+}
+
+export interface SkillsFields {
+  skillsTitle: string;
+}
+
+export interface PageFields {
+  header: HeaderFields;
+  about: AboutFields;
+  education: EducationFields;
+  experience: ExperienceFields;
+  skills: SkillsFields;
 }

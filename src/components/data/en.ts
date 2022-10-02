@@ -1,17 +1,40 @@
-export const CONTENT = {
-  firstName: "Rodrigo",
-  lastName: "Alonso",
-  title: "Cloud Software Developer",
-  email: "rodrigo.gtr@gmail.com",
+export const en = {
+  pageFields: {
+    header: {
+      locationField: "Location",
+      emailField: "E-mail",
+      phoneField: "Phone",
+      webField: "Web",
+    },
+    about: {
+      aboutTitle: "About",
+    },
+    education: {
+      educationTitle: "Education",
+      university: "University",
+      diplomas: "Diplomas",
+      courses: "Courses",
+    },
+    experience: {
+      experienceTitle: "Experience",
+    },
+    skills: {
+      skillsTitle: "Skills",
+    },
+  },
+  main: {
+    firstName: "Rodrigo",
+    lastName: "Alonso",
+    title: "Cloud Software Developer",
+  },
   about: [
     {
       id: 0,
-      paragraph: `I've dedicated my professional career between the front and back-end, my 
-                favorite stack includes the use of React (SSR with NextJS), ApolloGraphQL, NodeJS (Express) and PostgreSQL,
-                though I also work frequently with Python in the back-end i.e. for making ETL's (Apache Airflow). I've been 
-                involved in the creation of UI's for internal and external organizations clients, dealing
-                with responsive designs and in a lesser extent, with mobile through React Native.
-            `,
+      paragraph: `I have dedicated my professional work to the development of solutions through different software and platforms tools,
+        which allow to substantially improve the efficiency and effectiveness with which different organizations manage their
+        information and/or processes, formulating and proposing components and infrastructure, mainly API's, orchestrators,
+        ETL's, microservices and front-end, using tools like NodeJS, Express, React (NextJS), Python, Apache Airflow, Apache Kafka, Spark, etc.
+      `,
     },
     {
       id: 1,
@@ -40,9 +63,7 @@ export const CONTENT = {
     {
       id: 4,
       paragraph: `
-                I enjoy the trekking in hills and the outdoors in general. I also like playing the guitar, the photography and paint.
-                Although attached to my family, I travel from time to time to visits cities and their historic centers, which I enjoy
-                to explore.
+
             `,
     },
     {
@@ -68,7 +89,7 @@ export const CONTENT = {
   detailsSummary: {
     country: "Chile",
     city: "Valparaíso",
-    email: "rodrigo.gtr@gmail.com",
+    email: "roalonso@skiff.com",
     phone: "+56 9 66095 824",
     web: "",
   },
@@ -146,75 +167,69 @@ export const CONTENT = {
             `,
     },
   ],
-  skills: {
-    skills_1: [
-      {
-        id: 0,
-        name: "NodeJS",
-        value: 95,
-      },
-      {
-        id: 1,
-        name: "React",
-        value: 90,
-      },
-      {
-        id: 2,
-        name: "AdonisJS",
-        value: 80,
-      },
-      {
-        id: 3,
-        name: "GraphQL",
-        value: 80,
-      },
-    ],
-    skills_2: [
-      {
-        id: 0,
-        name: "Typescript",
-        value: 60,
-      },
-      {
-        id: 1,
-        name: "Python",
-        value: 80,
-      },
-      {
-        id: 2,
-        name: "Pandas",
-        value: 70,
-      },
-      {
-        id: 3,
-        name: "PostgreSQL",
-        value: 70,
-      },
-    ],
-    skills_3: [
-      {
-        id: 0,
-        name: "MongoDB",
-        value: 90,
-      },
+  skills: [
+    {
+      id: 0,
+      name: "NodeJS",
+      value: 95,
+    },
+    {
+      id: 1,
+      name: "React",
+      value: 90,
+    },
+    {
+      id: 2,
+      name: "AdonisJS",
+      value: 80,
+    },
+    {
+      id: 3,
+      name: "GraphQL",
+      value: 80,
+    },
+    {
+      id: 4,
+      name: "Typescript",
+      value: 60,
+    },
+    {
+      id: 5,
+      name: "Python",
+      value: 80,
+    },
+    {
+      id: 6,
+      name: "Pandas",
+      value: 70,
+    },
+    {
+      id: 7,
+      name: "PostgreSQL",
+      value: 70,
+    },
+    {
+      id: 8,
+      name: "MongoDB",
+      value: 90,
+    },
 
-      {
-        id: 1,
-        name: "Docker",
-        value: 98,
-      },
-      {
-        id: 2,
-        name: "Kubernetes",
-        value: 60,
-      },
-      {
-        id: 3,
-        name: "GoogleCloud",
-        value: 60,
-      },
-    ],
-  },
+    {
+      id: 9,
+      name: "Docker",
+      value: 98,
+    },
+    {
+      id: 10,
+      name: "Kubernetes",
+      value: 60,
+    },
+    {
+      id: 11,
+      name: "GoogleCloud",
+      value: 60,
+    },
+  ],
   education: {
     university: {
       year: "2002-2008",
@@ -231,49 +246,54 @@ export const CONTENT = {
     ],
     courses: [
       {
-        id: 0,
-        year: "2021",
-        name: "LFW211: Node.js Application Development",
-      },
-      {
         id: 1,
-        year: "2021",
-        name: "LFS253: Containers Fundamentals",
+        year: "2018",
+        name: "Machine Learning Specialization(5 courses), Google",
       },
       {
         id: 2,
-        year: "2021",
-        name: "LFS201: Essentials of Linux System Administration",
+        year: "2019",
+        name: "M320: Data Modeling, MOngoDB",
       },
       {
         id: 3,
-        year: "2021",
-        name: "Python Basics for Data Science",
-      },
-      {
-        id: 4,
-        year: "2020",
-        name: "AWS Fundamentals: Addressing Security Risk",
-      },
-      {
-        id: 5,
-        year: "2020",
-        name: "AWS Fundamentals: Going Cloud-Native",
-      },
-      {
-        id: 6,
         year: "2019",
         name: "M220JS: MongoDB for Javascript Developers",
       },
       {
+        id: 4,
+        year: "2020",
+        name: "AWS Fundamentals: Going Cloud-Native",
+      },
+      {
+        id: 5,
+        year: "2020",
+        name: "AWS Fundamentals: Addressing Security Risk",
+      },
+      {
+        id: 6,
+        year: "2021",
+        name: "Python Basics for Data Science",
+      },
+      {
         id: 7,
-        year: "2019",
-        name: "M320: Data Modeling",
+        year: "2021",
+        name: "LFS201: Essentials of Linux System Administration",
       },
       {
         id: 8,
-        year: "2018",
-        name: "Machine Learning Specialization, Google",
+        year: "2021",
+        name: "LFS253: Containers Fundamentals",
+      },
+      {
+        id: 9,
+        year: "2021",
+        name: "LFW211: Node.js Application Development",
+      },
+      {
+        id: 10,
+        year: "2022",
+        name: "NoSQL Databases Fundamentals",
       },
     ],
   },

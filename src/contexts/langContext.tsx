@@ -15,8 +15,8 @@ export function LangProvider({ children }: any) {
   const [locale, setLocale] = useState("en");
 
   const changeLanguage = (e: any) => {
-    e.preventDefault();
-    const ln = e.target.value;
+    //e.preventDefault();
+    const ln = e.currentTarget.value;
     setLocale(ln);
   };
 

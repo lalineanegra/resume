@@ -14,62 +14,68 @@ import LaptopMac from "@mui/icons-material/LaptopMac";
 import { grey } from "@mui/material/colors";
 
 // Local imports
-import { EducationType } from "../../types/interfaces";
+import { EducationFields, EducationType } from "../../../types/interfaces";
+import themeContext from "../../../contexts/themeContext";
 
 const sectionStyle = css({
-    alignItems: "stretch",
-  })
+  alignItems: "stretch",
+});
 const sectionContent = css({
-    background: grey[50],
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "right",
-    paddingLeft: "20%",
-    //@ts-ignore
-    // [theme.breakpoints.down("sm")]: {
-    //   justifyContent: "center",
-    //   paddingTop: 40,
-    //   paddingBottom: 40,
-    // },
-})
-const contentStyle = css({
-    //@ts-ignore
-    //background: theme.palette.background.default,
-    paddingLeft: 60,
-    marginLeft: 0,
-    justifyContent: "left",
-    textAlign: "left",
-    //@ts-ignore
-    // [theme.breakpoints.down("sm")]: {
-    //   padding: 10,
-    // },
-})
+  background: grey[50],
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "right",
+  paddingLeft: "10%",
+
+  [themeContext.breakpoints.down("md")]: {
+    justifyContent: "center",
+    textAlign: "center",
+    padding: "5%",
+  },
+});
 const titleStyle = css({
-    marginRight: 50,
-})
+  marginRight: 50,
+  [themeContext.breakpoints.down("md")]: {
+    margin: "0 auto",
+  },
+});
+
+const contentStyle = css({
+  //@ts-ignore
+  //background: theme.palette.background.default,
+  paddingLeft: 60,
+  marginLeft: 0,
+  justifyContent: "left",
+  textAlign: "left",
+  //@ts-ignore
+  [themeContext.breakpoints.down("sm")]: {
+    padding: 10,
+  },
+});
 const coursesStyle = css({
-    marginRight: "60",
-})
+  marginRight: "60",
+});
 const listCourse = css({
-    color: "grey",
-})
+  color: "grey",
+});
 const listStyle = css({
-    width: "100%",
-    //@ts-ignore
-    //backgroundColor: theme.palette.background.default,
-  })
+  width: "100%",
+  //@ts-ignore
+  //backgroundColor: theme.palette.background.default,
+});
 
 interface Props {
-  props: EducationType;
+  education: EducationType;
+  educationFields: EducationFields;
 }
 
 export const Education = (props: Props) => {
-  const education = props.props;
+  const education = props.education;
   return (
     <Grid container css={sectionStyle}>
       <Grid item xs={12} md={4} css={sectionContent}>
         <Typography variant="h6" display="block" css={titleStyle}>
-          EDUCATION
+          {props.educationFields.educationTitle.toUpperCase()}
         </Typography>
       </Grid>
       <Grid item xs={12} md={8} css={contentStyle}>
@@ -83,16 +89,12 @@ export const Education = (props: Props) => {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText
-                  primary="University"
+                  primary={props.educationFields.university}
                   secondary={education.university.name}
                 />
               </ListItem>
               <ListItem>
-                <Typography
-                  variant="body2"
-                  display="block"
-                  css={listCourse}
-                >
+                <Typography variant="body2" display="block" css={listCourse}>
                   {education.university.title}
                 </Typography>
               </ListItem>
@@ -107,17 +109,13 @@ export const Education = (props: Props) => {
                   </Avatar>
                 </ListItemAvatar>
                 <ListItemText
-                  primary="Diplomas"
+                  primary={props.educationFields.diplomas}
                   secondary={education.diplomas[0].university}
                 />
               </ListItem>
               {education.diplomas.map((diploma) => (
                 <ListItem key={diploma.id}>
-                  <Typography
-                    variant="body2"
-                    display="block"
-                    css={listCourse}
-                  >
+                  <Typography variant="body2" display="block" css={listCourse}>
                     {diploma.name}
                   </Typography>
                 </ListItem>
@@ -132,15 +130,11 @@ export const Education = (props: Props) => {
                     <LaptopMac />
                   </Avatar>
                 </ListItemAvatar>
-                <ListItemText primary="Courses" />
+                <ListItemText primary={props.educationFields.courses} />
               </ListItem>
               {education.courses.map((course) => (
                 <ListItem key={course.id}>
-                  <Typography
-                    variant="body2"
-                    display="block"
-                    css={listCourse}
-                  >
+                  <Typography variant="body2" display="block" css={listCourse}>
                     {course.name}
                   </Typography>
                 </ListItem>

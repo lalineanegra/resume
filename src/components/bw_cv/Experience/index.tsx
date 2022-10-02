@@ -5,39 +5,47 @@ import { Grid, Typography } from "@mui/material";
 import { grey } from "@mui/material/colors";
 
 // Local imports
-import WorkTimeline from "./WorkTimeline";
-import { ExperienceType } from '../../types/interfaces'
+import WorkTimeline from "../Timeline";
+import { ExperienceFields, ExperienceType } from "../../../types/interfaces";
+import themeContext from "../../../contexts/themeContext";
 
 const sectionStyle = css({
-    alignItems: "stretch",
-  })
+  alignItems: "stretch",
+});
 const sectionContent = css({
-    background: grey[100],
-    alignItems: "center",
-    display: "flex",
-    justifyContent: "right",
-    paddingLeft: "20%",
-    // [theme.breakpoints.down("sm")]: {
-    //   justifyContent: "center",
-    //   paddingTop: 40,
-    //   paddingBottom: 40,
-    // },
-  })
+  background: grey[100],
+  alignItems: "center",
+  display: "flex",
+  justifyContent: "right",
+  paddingLeft: "10%",
+
+  [themeContext.breakpoints.down("md")]: {
+    justifyContent: "center",
+    textAlign: "center",
+    padding: "5%",
+  },
+});
+const titleStyle = css({
+  marginRight: 50,
+  [themeContext.breakpoints.down("md")]: {
+    margin: "0 auto",
+  },
+});
+
 const contentStyle = css({
   paddingLeft: 0,
   marginLeft: 0,
   justifyContent: "left",
   textAlign: "left",
-  alignItems: 'left',
-  
-})
-
-const titleStyle = css({
-  marginRight: 50,
-})
+  alignItems: "left",
+  [themeContext.breakpoints.down("md")]: {
+    justifyContent: "center",
+  },
+});
 
 interface Props {
-  experience: ExperienceType[]
+  experience: ExperienceType[];
+  experienceFields: ExperienceFields;
 }
 
 const Experience = (props: Props) => {
@@ -46,7 +54,7 @@ const Experience = (props: Props) => {
     <Grid container css={sectionStyle}>
       <Grid item xs={12} md={4} css={sectionContent}>
         <Typography variant="h6" display="block" css={titleStyle}>
-          EXPERIENCE
+          {props.experienceFields.experienceTitle.toUpperCase()}
         </Typography>
       </Grid>
       <Grid item xs={12} md={8} css={contentStyle}>
