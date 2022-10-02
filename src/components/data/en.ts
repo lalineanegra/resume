@@ -55,7 +55,7 @@ export const en = {
     {
       id: 3,
       paragraph: `
-                I've working remotely for a while, coordinating my work in a team context, with other members in different
+                I've been working remotely for a while, coordinating my work in a team context, with other members in different
                 cities, som I'm used to fit and a variety of teams with different dynamics. I also 
                 have a background in construction, managing projects and contracts around a budget and schedule.
             `,
