@@ -101,11 +101,11 @@ export const en = {
       dates: "Sept 2020 - Now",
       city: "Valparaíso, Chile",
       accomplishments: `
-                Working with Falabella client, I joined the deployment stage of different components
-                associated with logistic and sales, working with microservices in AdonisJS, Python-Flask and Postgres,
-                building the UI to expose information to inner clients, and the services to load the data.
-                Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU, with front-end with NextJS, and Emotion/Material-UI
-            `,
+          Working with Falabella client, I joined the deployment stage of different components
+          associated with logistic and sales, working with microservices in AdonisJS, Python-Flask and Postgres,
+          building the UI to expose information to inner clients, and the services to load the data.
+          Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU, with front-end with NextJS, and Emotion/Material-UI
+      `,
     },
     {
       id: 1,
