@@ -33,7 +33,7 @@ export const sp = {
       paragraph: `He dedicado mi quehacer profesional al desarrollo de soluciones a través distintas herramientos de software y plataformas,
         que permitan mejorar sustancialmente la eficiencia y eficacia con que distintas organizaciones manejan su información y/o procesos,
         formulando y proponiendo componentes e infraestructura, principalmente API's, orquestadores, ETL's, microservicios y front-end,
-        utilizando herramientas NodeJS, Express, React (NextJS), Python, Apache Airflow, Apache Kafka, Spark, etc
+        utilizando herramientas NodeJS, Express, React ( SSR con NextJS), Material-UI, Python, Apache Airflow, Apache Kafka, Spark, etc
       `,
     },
     {
@@ -105,7 +105,7 @@ export const sp = {
         y del procesamiento y presentación de data para departamento de Bussness Inteligence utilizando framework Pytorch.
         
         Posteriormente, para cliente SMU, formulé soluciones y propuestas para la arquitectura de plataforma para el procesamiento de datos de venta,
-        utilizando Apache Kafka, Apaache Airflow, microservicios en python y fron-end con NextJS
+        utilizando Apache Kafka, Apaache Airflow, microservicios en python, fron-end con NextJS y Emotion/Materil-UI
       `,
     },
     {

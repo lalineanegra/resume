@@ -33,7 +33,7 @@ export const en = {
       paragraph: `I have dedicated my professional work to the development of solutions through different software and platforms tools,
         which allow to substantially improve the efficiency and effectiveness with which different organizations manage their
         information and/or processes, formulating and proposing components and infrastructure, mainly API's, orchestrators,
-        ETL's, microservices and front-end, using tools like NodeJS, Express, React (NextJS), Python, Apache Airflow, Apache Kafka, Spark, etc.
+        ETL's, microservices and front-end, using tools like NodeJS, Express, React ( SSR with NextJS), Material-UI, Python, Apache Airflow, Apache Kafka, Spark, etc.
       `,
     },
     {
@@ -56,7 +56,7 @@ export const en = {
       id: 3,
       paragraph: `
                 I've been working remotely for a while, coordinating my work in a team context, with other members in different
-                cities, som I'm used to fit and a variety of teams with different dynamics. I also 
+                cities, so I'm used to fit and a variety of teams with different dynamics. I also 
                 have a background in construction, managing projects and contracts around a budget and schedule.
             `,
     },
@@ -104,7 +104,7 @@ export const en = {
                 Working with Falabella client, I joined the deployment stage of different components
                 associated with logistic and sales, working with microservices in AdonisJS, Python-Flask and Postgres,
                 building the UI to expose information to inner clients, and the services to load the data.
-                Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU
+                Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU, with front-end with NextJS, and Emotion/Material-UI
             `,
     },
     {
