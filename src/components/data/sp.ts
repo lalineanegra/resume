@@ -105,7 +105,7 @@ export const sp = {
         y del procesamiento y presentación de data para departamento de Bussness Inteligence utilizando framework Pytorch.
         
         Posteriormente, para cliente SMU, formulé soluciones y propuestas para la arquitectura de plataforma para el procesamiento de datos de venta,
-        utilizando Apache Kafka, Apaache Airflow, microservicios en python, front-end con NextJS y Emotion/Materil-UI
+        utilizando Apache Kafka, Apaache Airflow, microservicios en python, front-end con NextJS, GraphQL (Apollo Client y Apollo Server) y Emotion/Materil-UI
       `,
     },
     {
@@ -193,8 +193,8 @@ export const sp = {
     },
     {
       id: 4,
-      name: "GraphQL",
-      value: 50,
+      name: "Apollo GraphQL",
+      value: 70,
     },
     {
       id: 5,
