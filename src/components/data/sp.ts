@@ -101,11 +101,11 @@ export const sp = {
       city: "Valparaíso, Chile",
       accomplishments: `
         Inicialmente integré un equipo consolidado, trabajando con metodología Agile para cliente Falabella, colaborando en el desarrollo, pruebas y despliegue
-        de microservicios construidos con AdonisJS, Python-Flask y MongoDB, con el objetivo de gestionar logística de retail
-        y del procesamiento y presentación de data para departamento de Bussness Inteligence utilizando framework Pytorch.
+        de microservicios construidos con ExpressJS, Python-Flask y MongoDB, con el objetivo de gestionar logística de retail
+        y del procesamiento y presentación de data para departamento de Bussness Inteligence.
         
         Posteriormente, para cliente SMU, formulé soluciones y propuestas para la arquitectura de plataforma para el procesamiento de datos de venta,
-        utilizando Apache Kafka, Apaache Airflow, microservicios en python, front-end con NextJS, GraphQL (Apollo Client y Apollo Server) y Emotion/Materil-UI
+        utilizando Apache Kafka, Apache Airflow e integrando Apache Spark (PySpark). Rront-end con NextJS, GraphQL (Apollo Client y Apollo Server como gateway) y Emotion/Materil-UI
       `,
     },
     {

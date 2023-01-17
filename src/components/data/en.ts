@@ -102,9 +102,9 @@ export const en = {
       city: "Valparaíso, Chile",
       accomplishments: `
           Working with Falabella client, I joined the deployment stage of different components
-          associated with logistic and sales, working with microservices in AdonisJS, Python-Flask and Postgres,
+          associated with logistic and sales, working with microservices in ExpressJS, Python-Flask and Postgres,
           building the UI to expose information to inner clients, and the services to load the data.
-          Lately building distributed systems based on Apache Kafka and Python micro-services, for client SMU, with front-end with NextJS, GraphQL (Apollo Client and Apollo Server) and Emotion/Material-UI
+          Lately building distributed systems based on Apache Kafka and integrating Apache Spark (PySpark) for client SMU, with front-end with NextJS, GraphQL (Apollo Client and Apollo Server for gateway) and Emotion/Material-UI
       `,
     },
     {
